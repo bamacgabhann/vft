@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. B.A. MacGabhann earth science collection specimens</title>
+    <title>State-Driven Spatial Media Tour</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<script src="specimens.js"></script>
+	<script src="data.js"></script>
     
     <style>
         :root {
@@ -17,12 +17,68 @@
             --accent-color: #0056b3;
         }
 
-        body, html {
+        /* Enables smooth scrolling when clicking the begin button */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* We remove 'overflow: hidden' and 'height: 100vh' from here so the page can scroll */
+        }
+
+        /* Intro Cover Styles */
+        #intro-cover {
             height: 100vh;
-            overflow: hidden; /* Prevent page scrolling; everything happens within the app layout */
+            width: 100vw;
+            /* Update the URL below to point to the cover image in the assets folder */
+            /* The linear-gradient adds a semi-transparent dark overlay so white text stays readable - adjust as appropriate */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/{name}/cover.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .intro-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .intro-content p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .scroll-down-btn {
+            position: absolute;
+            bottom: 40px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid white;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-down-btn:hover {
+            background: white;
+            color: black;
         }
 
         #app-container {
@@ -198,6 +254,18 @@
 </head>
 <body>
 
+    <!-- Intro Cover Section -->
+    <div id="intro-cover">
+        <div class="intro-content">
+            <!-- Update the Title and Text here for each StoryMap -->
+            <h1>TITLE</h1>
+            <p>Introduction text</p>
+        </div>
+        <button class="scroll-down-btn" onclick="document.getElementById('app-container').scrollIntoView({ behavior: 'smooth' });">
+            Begin Tour &#8595;
+        </button>
+    </div>
+
     <div id="app-container">
         
         <!-- Media Area -->
@@ -236,6 +304,7 @@
     <script>
         /**
          * 1. Data Structure (The Model)
+         * Uses the data in data.js (or alternative filename specified in header)
          */
 
         // State Variables
