@@ -473,7 +473,7 @@ const tourData = [
     },
     {
         "title": "Back to Solfatara",
-        "text": "<em>[3 videos, 2 photos]</em> With a better view!"<p><a href='https://www.google.ie/maps/@40.8303695,14.1369657,3a,60y,145.76h,89.7t/data=!3m6!1e1!3m4!1s9OvArEo7cp-Tn4nBNnZGLQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>,
+        "text": "<em>[3 videos, 2 photos]</em> With a better view!<p><a href='https://www.google.ie/maps/@40.8303695,14.1369657,3a,60y,145.76h,89.7t/data=!3m6!1e1!3m4!1s9OvArEo7cp-Tn4nBNnZGLQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.83043435175682,
         "lng": 14.137108996505619,
         "zoom": 14,
@@ -552,7 +552,7 @@ const tourData = [
     },
     {
         "title": "Monte Nuovo",
-        "text": "<em>[1 video, 2 photos]</em> A better view of the crater"<p><a href='https://www.google.ie/maps/@40.834906,14.0877347,3a,75y,100.92h,61.53t/data=!3m8!1e1!3m6!1sAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib%3Dw203-h100-k-no-pi0-ya68.08733-ro0-fo100!7i8192!8i4096!5m1!1e4?entry=ttu' target='_blank'>Drone view on Google Street View</a></p>,
+        "text": "<em>[1 video, 2 photos]</em> A better view of the crater<p><a href='https://www.google.ie/maps/@40.834906,14.0877347,3a,75y,100.92h,61.53t/data=!3m8!1e1!3m6!1sAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib%3Dw203-h100-k-no-pi0-ya68.08733-ro0-fo100!7i8192!8i4096!5m1!1e4?entry=ttu' target='_blank'>Drone view on Google Street View</a></p>",
         "lat": 40.83697709734666,
         "lng": 14.087858274572254,
         "zoom": 14,
