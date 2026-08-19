@@ -161,7 +161,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/P9150524.webp
+                "src": "./assets/parys/P9150524.webp"
             {
                 "type": "image",
                 "src": "./assets/parys/P9150528.webp"
