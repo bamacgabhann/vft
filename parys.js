@@ -4,7 +4,7 @@ const tourData = [
         "text": "<p>An introduction to Parys Mine and the virtual field trip; and thinking a bit about the waste left behind by mining. [2 videos]</p>",
         "lat": 53.385350095280984,
         "lng": -4.348685592411962,
-        "zoom": 14,
+        "zoom": 10,
         "media": [
             {
                 "type": "youtube",
@@ -21,7 +21,7 @@ const tourData = [
         "text": "<p>Let's have a look at some of the minerals we can see in the rocks here</p>",
         "lat": 53.38485017038864,
         "lng": -4.347049444913378,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -34,7 +34,7 @@ const tourData = [
         "text": "<p>Rain falls here. What happens to it?</p>",
         "lat": 53.38488776494467,
         "lng": -4.347264021634506,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -51,7 +51,7 @@ const tourData = [
         "text": "<p>Is there anything living here?</p>",
         "lat": 53.3849693530159,
         "lng": -4.346219301223523,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -64,7 +64,7 @@ const tourData = [
         "text": "<p>Veins in the rocks</p>",
         "lat": 53.38607157653641,
         "lng": -4.344567060470855,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -77,7 +77,7 @@ const tourData = [
         "text": "<p>At the bottom of the opencast mine</p>",
         "lat": 53.38551007000678,
         "lng": -4.34575930237761,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -90,7 +90,7 @@ const tourData = [
         "text": "<p>Why all the colour variations in these rocks?</p>",
         "lat": 53.38590280540923,
         "lng": -4.346606880426058,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -103,7 +103,7 @@ const tourData = [
         "text": "<p>Why were the minerals close to the surface to be mined?</p>",
         "lat": 53.38604678082032,
         "lng": -4.347349852322956,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -124,7 +124,7 @@ const tourData = [
         "text": "<p>More minerals!</p>",
         "lat": 53.38579882286507,
         "lng": -4.346217960119018,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -153,7 +153,7 @@ const tourData = [
         "text": "<p>The impact on the landscape is very clear</p>",
         "lat": 53.3870961868861,
         "lng": -4.343114644289741,
-        "zoom": 14,
+        "zoom": 13,
         "media": [
             {
                 "type": "youtube",
@@ -174,7 +174,7 @@ const tourData = [
         "text": "<p>Separate from the mine - a nice little contrast in energy generation in Anglesey</p>",
         "lat": 53.388467094559275,
         "lng": -4.3430368602283345,
-        "zoom": 14,
+        "zoom": 12,
         "media": [
             {
                 "type": "youtube",
@@ -191,7 +191,7 @@ const tourData = [
         "text": "<p>A video at the entrance - and some photos of the underground.</p><p>Photos show:</p><p>1 & 2. Going down an underground passage</p><p>3. The Bronze Age cavern</p><p>4. A Bronze Age mining tool</p><p>5. Copper minerals in the walls</p><p>6. Specimen of copper minerals</p>",
         "lat": 53.387708861699174,
         "lng": -4.346574693917895,
-        "zoom": 14,
+        "zoom": 16,
         "media": [
             {
                 "type": "youtube",
@@ -228,7 +228,7 @@ const tourData = [
         "text": "<p>Will there be mining here again?</p>",
         "lat": 53.38715377549467,
         "lng": -4.348100870846904,
-        "zoom": 14,
+        "zoom": 15,
         "media": [
             {
                 "type": "youtube",
@@ -241,7 +241,7 @@ const tourData = [
         "text": "<p>Environmental Site Management</p>",
         "lat": 53.387048196319526,
         "lng": -4.349069148300985,
-        "zoom": 14,
+        "zoom": 15,
         "media": [
             {
                 "type": "youtube",
@@ -254,7 +254,7 @@ const tourData = [
         "text": "<p>Getting back to normality as we leave the site</p>",
         "lat": 53.38742891999352,
         "lng": -4.3495868146407,
-        "zoom": 14,
+        "zoom": 15,
         "media": [
             {
                 "type": "youtube",
@@ -267,7 +267,7 @@ const tourData = [
         "text": "<p>Considering the impact of the mine on people and the region</p>",
         "lat": 53.38790561962503,
         "lng": -4.350906461475626,
-        "zoom": 14,
+        "zoom": 15,
         "media": [
             {
                 "type": "youtube",
