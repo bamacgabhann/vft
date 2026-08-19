@@ -42,7 +42,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/OAMcgmprR7fymZIhGWm_Q.jpeg"
+                "src": "./assets/parys/P9150508.webp"
             }
         ]
     },
@@ -111,11 +111,11 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/h5kSQfYdaOPr2zlHS-CGe.jpeg"
+                "src": "./assets/parys/P9150520.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/5NXIE-9LyDJiTD1IrQD6e.jpeg"
+                "src": "./assets/parys/P9150522.webp"
             }
         ]
     },
@@ -132,19 +132,19 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/Cey4Ipwtw0zWpbsmoSH7u.jpeg"
+                "src": "./assets/parys/P9150510.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/dcou8p_UDx7TFeE0WInSG.jpeg"
+                "src": "./assets/parys/P9150512.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/CEZrdPyrOGCSwux8Husf7.jpeg"
+                "src": "./assets/parys/P9150514.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/j_M8sze6kzFL9Yir7KEIR.jpeg"
+                "src": "./assets/parys/P9150518.webp"
             }
         ]
     },
@@ -161,11 +161,10 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/YahVngISCynnt_xOGlGtO.jpeg"
-            },
+                "src": "./assets/parys/P9150524.webp
             {
                 "type": "image",
-                "src": "./assets/parys/bCo_xv2wxbiQdoP_vScyz.jpeg"
+                "src": "./assets/parys/P9150528.webp"
             }
         ]
     },
@@ -182,13 +181,13 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/JHQTQvzG02OnTeHVZeFPN.jpeg"
+                "src": "./assets/parys/P9150505.webp"
             }
         ]
     },
     {
         "title": "The Underground Mine (Stop 12)",
-        "text": "<p>A video at the entrance - and some photos of the underground.</p><p>Photos show:</p><p>1. Going down an underground passage</p><p>2. The Bronze Age cavern</p><p>3. A Bronze Age mining tool</p><p>4. Copper minerals in the walls</p>",
+        "text": "<p>A video at the entrance - and some photos of the underground.</p><p>Photos show:</p><p>1 & 2. Going down an underground passage</p><p>3. The Bronze Age cavern</p><p>4. A Bronze Age mining tool</p><p>5. Copper minerals in the walls</p><p>6. Specimen of copper minerals</p>",
         "lat": 53.387708861699174,
         "lng": -4.346574693917895,
         "zoom": 14,
@@ -199,19 +198,27 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/parys/l4pj6fjoXjIizFTMxFb4n.jpeg"
+                "src": "./assets/parys/DSC02457.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/P9zCEK-LT5dOwHo5dtkrS.jpeg"
+                "src": "./assets/parys/DSC02458.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/220lWpcgsTfY-Eb7E3-_b.jpeg"
+                "src": "./assets/parys/DSC02446.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/parys/Mzsnf_3WMPlR6cdTsUYbi.jpeg"
+                "src": "./assets/parys/DSC02448.webp"
+            },
+            {
+                "type": "image",
+                "src": "./assets/parys/DSC02450.webp"
+            },
+            {
+                "type": "image",
+                "src": "./assets/parys/DSC02429.webp"
             }
         ]
     },

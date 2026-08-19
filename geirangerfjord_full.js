@@ -38,7 +38,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/_WhpFeabVXpXhf3Dk0AnV.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628083145.webp"
             }
         ]
     },
@@ -94,7 +94,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/e0FxaoEgm9sltL2e9MpOM.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628090339.webp"
             }
         ]
     },
@@ -111,7 +111,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/SPq2Az6hWM0Amu_rJmVvp.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628090614.webp"
             }
         ]
     },
@@ -154,15 +154,15 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/eeEEya028rqHUsegm_nfc.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628093445.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/2h9SdRddZ0UBz3nDIAyuz.jpeg"
+                "src": "./assets/geirangerfjord_full/P6060079.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/g95tX0ir3ytlcQOXscDdW.jpeg"
+                "src": "./assets/geirangerfjord_full/P6060078.webp"
             }
         ]
     },
@@ -179,7 +179,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/6HZKHx-DYtZRmGn1mgfJN.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628094045.webp"
             }
         ]
     },
@@ -209,7 +209,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/5VjmliQ71beLBZwDqTPDU.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628100043.webp"
             }
         ]
     },
@@ -252,7 +252,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/18vmr6M2ypVsZaOoXukgQ.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628101007.webp"
             }
         ]
     },
@@ -282,7 +282,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/OtcsW-fF2rBhh1NBleqeS.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628101433.webp"
             }
         ]
     },
@@ -334,19 +334,19 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/SQgtUOAze64NeT_eRqwNr.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628102459.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/Vel5NsUguGbx2rrlWfspB.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628102520.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/dRM0pnMewnfA4h3e38984.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628102603.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/mGAYjevyhWHTJV1iMs-a9.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628102804.webp"
             }
         ]
     },
@@ -389,7 +389,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/BvnQgf_DL78fM7x4ci8bK.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628105103.webp"
             }
         ]
     },
@@ -406,11 +406,11 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/9RQpJJb1yIUnrJ6F-Htgm.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628110710.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/FfLNyeogoa6Lhpe678J7o.jpeg"
+                "src": "./assets/geirangerfjord_full/P6280255.webp"
             }
         ]
     },
@@ -427,15 +427,15 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/oyWllBTT_pQMasQ3k1N4d.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628112055.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/5avAiOWp1wVtC_Xlc6tct.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628112752.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/LUJIXvdwtI9BdQB6RTGvr.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628112829.webp"
             }
         ]
     },
@@ -452,11 +452,11 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/9uAs_gvoXUwos3ByeefdT.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628112602.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/C11P_5n9hNdW4XGEb2E-J.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628112605.webp"
             }
         ]
     },
@@ -477,7 +477,7 @@ const tourData = [
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/soJkiglulR0pC8_GkKlIm.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628122718.webp"
             }
         ]
     },
@@ -516,11 +516,11 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/mLMKTyLeitV6vKx3VLMao.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628131750.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/hBxKxVlr8BHvYm1efRtmA.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628131758.webp"
             }
         ]
     },
@@ -533,7 +533,7 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/t20iL4Fql6vKM83nFO5Vr.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628132722.webp"
             }
         ]
     },
@@ -546,15 +546,15 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/_XP_P2gSO1nlAROqXz6QG.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628133409.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/sdn3lkTymtD4OxfRCD6bI.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628133439.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/6Xcft2pAAP_EAFD_3SUSb.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628133642.webp"
             }
         ]
     },
@@ -593,23 +593,23 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/MC02hMntNMv2XznbYR2u7.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145215.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/sYrToKDeMQgRR-ks3o1dI.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145221.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/FhtM_Fpi5_7rwLmG7nYb6.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145243.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/VW540nVBzK9Nob-LazqNU.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145253.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/51kg-6WZ7HVsVKg_mJJNI.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145301.webp"
             }
         ]
     },
@@ -622,23 +622,23 @@ const tourData = [
         "media": [
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/SDAP7mogQFRLGr2kY9bQw.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145844.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/HHfBm7JsVWRGFvg98PY2w.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145852.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/ve5BOQFcrvK9Q3Jm8NM3M.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145905.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/RJoxZOiCdEyfquKETqGsW.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628145927.webp"
             },
             {
                 "type": "image",
-                "src": "./assets/geirangerfjord_full/fqGHYv0_m4suaXawY66Hs.jpeg"
+                "src": "./assets/geirangerfjord_full/IMG20220628150603.webp"
             }
         ]
     },
