@@ -31,7 +31,7 @@ const tourData = [
     },
     {
         "title": "Pompeii building materials",
-        "text": "<em>[1 video, 1 photo]</em> This video and the accompanying photograph are typical of the materials used in the construction of buildings all over Pompeii. You can probably guess what it is, even if you don't recognise it - and if not, you'll get the answer in the Herculaneum videos.<p><a href="https://www.google.ie/maps/@40.7517016,14.4921924,3a,75y,144.59h,82.43t/data=!3m6!1e1!3m4!1sDwHPRyqMN4-hGjR9yxNHdg!2e0!7i13312!8i6656?entry=ttu" target="_blank">See on Google Street View</a></p>",
+        "text": "<em>[1 video, 1 photo]</em> This video and the accompanying photograph are typical of the materials used in the construction of buildings all over Pompeii. You can probably guess what it is, even if you don't recognise it - and if not, you'll get the answer in the Herculaneum videos.<p><a href='https://www.google.ie/maps/@40.7517016,14.4921924,3a,75y,144.59h,82.43t/data=!3m6!1e1!3m4!1sDwHPRyqMN4-hGjR9yxNHdg!2e0!7i13312!8i6656?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.75173418481376,
         "lng": 14.492190228128756,
         "zoom": 14,
@@ -74,7 +74,7 @@ const tourData = [
     },
     {
         "title": "Pompeii - Santuario di Apollo",
-        "text": "<em>[1 photo]</em> The archaeological excavations - or, in Italian, <em>scavi</em> - give a snapshot of Roman life like no other, with houses, baths, temples, markets, bars, and many other indications of what life was like, including art and even graffiti. <p>It's hard, while wandering around the excavations, not to look at the imposing shape of Vesuvio looming in the background, and wonder.... </p><p>The Romans knew about volcanoes - Mt. Etna appears in several accounts and even myths, and there were many links between the Romans and the Greeks, who would have been familiar with many Greek island volcanoes. Pompeii itself was heavily influenced by the Greeks, who were largely responsible for the early development of the city. </p><p>They did not know that Vesuvio was an active volcano, however.</p><p>There's a great answer on Reddit's r/AskHistorians about it: <a href="https://www.reddit.com/r/AskHistorians/comments/11fqb2r/did_citizens_of_pompeii_know_vesuvius_was_a/" target="_blank">Did citizens of Pompeii know Vesuvius was a volcano?</a> </p><p>Even if they had known, though.... Nowadays, we know, and the Roman city of Pompeii is now surrounded by the modern commune of Pompei, part of the Metropolitan City of Naples (Napoli).</p>",
+        "text": "<em>[1 photo]</em> The archaeological excavations - or, in Italian, <em>scavi</em> - give a snapshot of Roman life like no other, with houses, baths, temples, markets, bars, and many other indications of what life was like, including art and even graffiti. <p>It's hard, while wandering around the excavations, not to look at the imposing shape of Vesuvio looming in the background, and wonder.... </p><p>The Romans knew about volcanoes - Mt. Etna appears in several accounts and even myths, and there were many links between the Romans and the Greeks, who would have been familiar with many Greek island volcanoes. Pompeii itself was heavily influenced by the Greeks, who were largely responsible for the early development of the city. </p><p>They did not know that Vesuvio was an active volcano, however.</p><p>There's a great answer on Reddit's r/AskHistorians about it: <a href='https://www.reddit.com/r/AskHistorians/comments/11fqb2r/did_citizens_of_pompeii_know_vesuvius_was_a/' target='_blank'>Did citizens of Pompeii know Vesuvius was a volcano?</a> </p><p>Even if they had known, though.... Nowadays, we know, and the Roman city of Pompeii is now surrounded by the modern commune of Pompei, part of the Metropolitan City of Naples (Napoli).</p>",
         "lat": 40.749037375761496,
         "lng": 14.48452667136654,
         "zoom": 14,
@@ -87,7 +87,7 @@ const tourData = [
     },
     {
         "title": "Pompeii - Taberna Fortvnatae",
-        "text": "<em>[1 photo] </em>Not really so lucky if you ask me!<p><a href="https://www.google.ie/maps/@40.7504303,14.483291,3a,75y,339.46h,82.71t/data=!3m6!1e1!3m4!1sjXHG_WXkYpL9bNUlACUjdg!2e0!7i13312!8i6656?entry=ttu" target="_blank">See on Google Street View</a></p>",
+        "text": "<em>[1 photo] </em>Not really so lucky if you ask me!<p><a href='https://www.google.ie/maps/@40.7504303,14.483291,3a,75y,339.46h,82.71t/data=!3m6!1e1!3m4!1sjXHG_WXkYpL9bNUlACUjdg!2e0!7i13312!8i6656?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.75043536127299,
         "lng": 14.483330406146289,
         "zoom": 14,
@@ -473,7 +473,7 @@ const tourData = [
     },
     {
         "title": "Back to Solfatara",
-        "text": "<em>[3 videos, 2 photos]</em> With a better view!"<p><a href="https://www.google.ie/maps/@40.8303695,14.1369657,3a,60y,145.76h,89.7t/data=!3m6!1e1!3m4!1s9OvArEo7cp-Tn4nBNnZGLQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu" target="_blank">See on Google Street View</a></p>,
+        "text": "<em>[3 videos, 2 photos]</em> With a better view!"<p><a href='https://www.google.ie/maps/@40.8303695,14.1369657,3a,60y,145.76h,89.7t/data=!3m6!1e1!3m4!1s9OvArEo7cp-Tn4nBNnZGLQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>,
         "lat": 40.83043435175682,
         "lng": 14.137108996505619,
         "zoom": 14,
@@ -502,7 +502,7 @@ const tourData = [
     },
     {
         "title": "Temple of Serapis",
-        "text": "<em>[2 videos, 3 photos]</em> One of the most significant sites in the history of geology as a science.<p>Also, when I said \"within my lifetime\", that was last year. It's now been upgraded to <strong>HAPPENING RIGHT NOW</strong> </p><p><a href="https://www.volcanodiscovery.com/campi-flegrei.html" target="_blank">Campi Flegrei (Phlegrean Fields) Volcano on volcanodiscovery.com</a></p>",
+        "text": "<em>[2 videos, 3 photos]</em> One of the most significant sites in the history of geology as a science.<p>Also, when I said \"within my lifetime\", that was last year. It's now been upgraded to <strong>HAPPENING RIGHT NOW</strong> </p><p><a href='https://www.volcanodiscovery.com/campi-flegrei.html' target='_blank'>Campi Flegrei (Phlegrean Fields) Volcano on volcanodiscovery.com</a></p>",
         "lat": 40.826436129428956,
         "lng": 14.12097953259317,
         "zoom": 14,
@@ -552,7 +552,7 @@ const tourData = [
     },
     {
         "title": "Monte Nuovo",
-        "text": "<em>[1 video, 2 photos]</em> A better view of the crater"<p><a href="https://www.google.ie/maps/@40.834906,14.0877347,3a,75y,100.92h,61.53t/data=!3m8!1e1!3m6!1sAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib%3Dw203-h100-k-no-pi0-ya68.08733-ro0-fo100!7i8192!8i4096!5m1!1e4?entry=ttu" target="_blank">Drone view on Google Street View</a></p>,
+        "text": "<em>[1 video, 2 photos]</em> A better view of the crater"<p><a href='https://www.google.ie/maps/@40.834906,14.0877347,3a,75y,100.92h,61.53t/data=!3m8!1e1!3m6!1sAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO2hasocfjRVd_k4EVbofeC8bmfB83otbjL5pib%3Dw203-h100-k-no-pi0-ya68.08733-ro0-fo100!7i8192!8i4096!5m1!1e4?entry=ttu' target='_blank'>Drone view on Google Street View</a></p>,
         "lat": 40.83697709734666,
         "lng": 14.087858274572254,
         "zoom": 14,
@@ -590,7 +590,7 @@ const tourData = [
     },
     {
         "title": "Via Virgilio",
-        "text": "<em>[1 video, 4 photos]</em> Look what the wall's made of - just like the Romans did at Pompeii and Herculaneum<p><a href="https://www.google.ie/maps/@40.8326593,14.092276,3a,60y,346.1h,77.45t/data=!3m6!1e1!3m4!1sPkrB7R4XceOjRVvvmJKXSg!2e0!7i16384!8i8192!5m1!1e4?entry=ttu" target="_blank">See on Google Street View</a></p>",
+        "text": "<em>[1 video, 4 photos]</em> Look what the wall's made of - just like the Romans did at Pompeii and Herculaneum<p><a href='https://www.google.ie/maps/@40.8326593,14.092276,3a,60y,346.1h,77.45t/data=!3m6!1e1!3m4!1sPkrB7R4XceOjRVvvmJKXSg!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.83273169206195,
         "lng": 14.092503860585596,
         "zoom": 14,
@@ -619,7 +619,7 @@ const tourData = [
     },
     {
         "title": "Via Orazio",
-        "text": "<em>[1 video, 3 photos]</em> Napoli has a lot of topography, and on the northern side of the Bay of Naples there's some very steep areas with roads winding up the slopes. All of the rock is made of volcanic ash - and so are some of the walls bordering the road.<p><a href="https://www.google.ie/maps/@40.8239412,14.2179455,3a,75y,23.35h,91.57t/data=!3m6!1e1!3m4!1sFTFIpE94kcIxipDMNLNQVQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu" target="_blank">See on Google Street View</a></p>",
+        "text": "<em>[1 video, 3 photos]</em> Napoli has a lot of topography, and on the northern side of the Bay of Naples there's some very steep areas with roads winding up the slopes. All of the rock is made of volcanic ash - and so are some of the walls bordering the road.<p><a href='https://www.google.ie/maps/@40.8239412,14.2179455,3a,75y,23.35h,91.57t/data=!3m6!1e1!3m4!1sFTFIpE94kcIxipDMNLNQVQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.82398077413464,
         "lng": 14.218005761497963,
         "zoom": 14,
@@ -644,7 +644,7 @@ const tourData = [
     },
     {
         "title": "Further down the Via Orazio",
-        "text": "<p>3 more photos showing more volcanic ash, with roads and buildings built on top</p><a href="https://www.google.ie/maps/@40.8275102,14.2189093,3a,75y,266.42h,112.34t/data=!3m6!1e1!3m4!1ssSLob67QbN-o8iXUE0jVxQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu" target="_blank">See on Google Street View</a></p>",
+        "text": "<p>3 more photos showing more volcanic ash, with roads and buildings built on top</p><a href='https://www.google.ie/maps/@40.8275102,14.2189093,3a,75y,266.42h,112.34t/data=!3m6!1e1!3m4!1ssSLob67QbN-o8iXUE0jVxQ!2e0!7i16384!8i8192!5m1!1e4?entry=ttu' target='_blank'>See on Google Street View</a></p>",
         "lat": 40.82745277583086,
         "lng": 14.218729178902098,
         "zoom": 14,
@@ -682,7 +682,7 @@ const tourData = [
     },
     {
         "title": "Mediterranean chaparral vegetation",
-        "text": "<em>[1 video, 1 photo]</em> With a twist<p><a href="https://www.google.ie/maps/@38.8044027,15.2425516,2a,60y,248.9h,90.87t/data=!3m6!1e1!3m4!1sYHS6R4ZmXj3V3qIgJXmkcg!2e0!7i13312!8i6656!5m1!1e4?entry=ttu" target="_blank">Nearby on Google Street View</a></p>",
+        "text": "<em>[1 video, 1 photo]</em> With a twist<p><a href='https://www.google.ie/maps/@38.8044027,15.2425516,2a,60y,248.9h,90.87t/data=!3m6!1e1!3m4!1sYHS6R4ZmXj3V3qIgJXmkcg!2e0!7i13312!8i6656!5m1!1e4?entry=ttu' target='_blank'>Nearby on Google Street View</a></p>",
         "lat": 38.80201244768315,
         "lng": 15.241558179252985,
         "zoom": 14,
@@ -699,7 +699,7 @@ const tourData = [
     },
     {
         "title": "Scari beach",
-        "text": "<em>[1 video, 1 photo]</em> Do I even need to joke about the name?<p><a href="https://www.google.ie/maps/@38.8019284,15.2426579,2a,60y,244.45h,96.25t/data=!3m6!1e1!3m4!1s1P8jHf1VENRB7OiSaSHGCw!2e0!7i13312!8i6656!5m1!1e4?entry=ttu" target="_blank">Nearby on Google Street View</a></p>",
+        "text": "<em>[1 video, 1 photo]</em> Do I even need to joke about the name?<p><a href='https://www.google.ie/maps/@38.8019284,15.2426579,2a,60y,244.45h,96.25t/data=!3m6!1e1!3m4!1s1P8jHf1VENRB7OiSaSHGCw!2e0!7i13312!8i6656!5m1!1e4?entry=ttu' target='_blank'>Nearby on Google Street View</a></p>",
         "lat": 38.80150868642726,
         "lng": 15.241768732659487,
         "zoom": 14,
@@ -715,7 +715,7 @@ const tourData = [
         ]
     },
     {
-        "title": "Can you believe I didn't even mention the sign right in front of me?!<p><a href="https://www.volcanodiscovery.com/stromboli.html" target="_blank">Stromboli Volcano on volcanodiscovery.com</a></p><a href="https://rischi.protezionecivile.gov.it/en/volcanic/volcanoes-italy/stromboli/" target="_blank">Civil Protection website</a></p><a href="https://journals.openedition.org/viatourism/4829" target="_blank">Knafou, R. 2019 Stromboli or Russian roulette tourism. <em>Via</em> <strong>16</strong>, 4829. doi: 10.4000/viatourism.4829</a></p>",
+        "title": "Can you believe I didn't even mention the sign right in front of me?!<p><a href='https://www.volcanodiscovery.com/stromboli.html' target='_blank'>Stromboli Volcano on volcanodiscovery.com</a></p><a href='https://rischi.protezionecivile.gov.it/en/volcanic/volcanoes-italy/stromboli/' target='_blank'>Civil Protection website</a></p><a href='https://journals.openedition.org/viatourism/4829' target='_blank'>Knafou, R. 2019 Stromboli or Russian roulette tourism. <em>Via</em> <strong>16</strong>, 4829. doi: 10.4000/viatourism.4829</a></p>",
         "text": "<em>[1 video, 2 photos, 1 sign, 1 hazard map]</em> Let's talk about risk and hazard mapping",
         "lat": 38.798007342785766,
         "lng": 15.239360108964208,
