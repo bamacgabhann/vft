@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Field Trip to Wexford and Waterford - The Geological History of Ireland, and Earth Science and Society</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="loch_garman.js"></script>
+    
+    <style>
+        :root {
+            --primary-bg: #111;
+            --panel-bg: #f8f9fa;
+            --text-color: #333;
+            --accent-color: #0056b3;
+        }
+
+        /* Enables smooth scrolling when clicking the begin button */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* We remove 'overflow: hidden' and 'height: 100vh' from here so the page can scroll */
+        }
+
+        /* Intro Cover Styles */
+        #intro-cover {
+            height: 100vh;
+            width: 100vw;
+            /* Update the URL below to point to the cover image in the assets folder */
+            /* The linear-gradient adds a semi-transparent dark overlay so white text stays readable - adjust as appropriate */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/loch_garman/cover.webp') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .intro-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .intro-content p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .scroll-down-btn {
+            position: absolute;
+            bottom: 40px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid white;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-down-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        #app-container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Layout Split:
+           Media Panel occupies 65% of the viewport width.
+           Side Panel (Map + Text) occupies 35%.
+        */
+        #media-panel {
+            width: 65%;
+            height: 100%;
+            background-color: var(--primary-bg);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #side-panel {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid #ddd;
+        }
+
+        /* Media Viewer Styles */
+        #media-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #media-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensures entire image is visible without distortion */
+        }
+
+        #media-content iframe {
+            width: 90%;
+            height: 80%;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* Media Carousel Overlay Controls */
+        .media-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 4px;
+            z-index: 10;
+            transition: background 0.2s;
+        }
+
+        .media-btn:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .media-btn:disabled {
+            display: none; /* Hide button if there is no previous/next media */
+        }
+
+        #prev-media { left: 20px; }
+        #next-media { right: 20px; }
+
+        #media-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            z-index: 10;
+        }
+
+        /* Side Panel: Map */
+        #map-container {
+            height: 45%; /* Top 45% of side panel */
+            width: 100%;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Side Panel: Text and Navigation */
+        #text-container {
+            height: 55%; /* Bottom 55% of side panel */
+            background-color: var(--panel-bg);
+            padding: 20px 30px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #location-title {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        #location-text {
+            line-height: 1.6;
+            color: #444;
+            flex-grow: 1; /* Pushes navigation controls to the bottom */
+        }
+
+        /* Location Navigation Controls */
+        .loc-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+        }
+
+        .loc-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .loc-btn:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            #app-container {
+                flex-direction: column;
+            }
+            #media-panel {
+                width: 100%;
+                height: 40%;
+            }
+            #side-panel {
+                width: 100%;
+                height: 60%;
+            }
+            #map-container {
+                height: 40%;
+            }
+            #text-container {
+                height: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intro Cover Section -->
+    <div id="intro-cover">
+        <div class="intro-content">
+            <!-- Update the Title and Text here for each StoryMap -->
+            <h1>Geirangerfjord Virtual Field Trip</h1>
+            <p>This virtual field trip will take you on a boat tour from Ålesund to Geiranger - to the most dangerous place in Norway</p>
+        </div>
+        <button class="scroll-down-btn" onclick="document.getElementById('app-container').scrollIntoView({ behavior: 'smooth' });">
+            Begin Tour &#8595;
+        </button>
+    </div>
+
+    <div id="app-container">
+        
+        <!-- Media Area -->
+        <div id="media-panel">
+            <button id="prev-media" class="media-btn" onclick="changeMedia(-1)">&#10094;</button>
+            <div id="media-content">
+                <!-- Image or Iframe injected here via JS -->
+            </div>
+            <button id="next-media" class="media-btn" onclick="changeMedia(1)">&#10095;</button>
+            <div id="media-counter"></div>
+        </div>
+
+        <!-- Spatial & Narrative Area -->
+        <div id="side-panel">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            
+            <div id="text-container">
+                <h2 id="location-title"></h2>
+                <div id="location-text"></div>
+                
+                <div class="loc-nav">
+                    <button id="prev-loc" class="loc-btn" onclick="changeLocation(-1)">&#8592; Previous Stop</button>
+                    <span id="loc-counter" style="line-height: 38px; color: #666; font-size: 14px;"></span>
+                    <button id="next-loc" class="loc-btn" onclick="changeLocation(1)">Next Stop &#8594;</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        /**
+         * 1. Data Structure (The Model)
+         * Uses the data in data.js (or alternative filename specified in header)
+         */
+
+        // State Variables
+        let currentLocationIndex = 0;
+        let currentMediaIndex = 0;
+        let map;
+        let markers = [];
+
+        /**
+         * 2. Initialization (The Controller setup)
+         */
+        function initApp() {
+            // Initialize Map
+            map = L.map('map', { zoomControl: false }).setView([0,0], 2);
+            L.control.zoom({ position: 'topright' }).addTo(map);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add markers for all locations, bind click events
+            tourData.forEach((location, index) => {
+                const marker = L.marker([location.lat, location.lng]).addTo(map);
+                marker.on('click', () => {
+                    // Calculate relative step if jumping via marker click
+                    const step = index - currentLocationIndex;
+                    if (step !== 0) changeLocation(step, true);
+                });
+                markers.push(marker);
+            });
+
+            // Ensure map sizes correctly within flexbox on initial load
+            setTimeout(() => map.invalidateSize(), 100);
+
+            // Load first location
+            updateLocationUI();
+        }
+
+        /**
+         * 3. State Management Functions
+         */
+        function changeLocation(step, isJumping = false) {
+            currentLocationIndex += step;
+            
+            // Bounds checking
+            if (currentLocationIndex < 0) currentLocationIndex = 0;
+            if (currentLocationIndex >= tourData.length) currentLocationIndex = tourData.length - 1;
+
+            // Reset media index when changing locations
+            currentMediaIndex = 0;
+            
+            updateLocationUI();
+        }
+
+        function changeMedia(step) {
+            const locData = tourData[currentLocationIndex];
+            currentMediaIndex += step;
+
+            // Bounds checking
+            if (currentMediaIndex < 0) currentMediaIndex = 0;
+            if (currentMediaIndex >= locData.media.length) currentMediaIndex = locData.media.length - 1;
+
+            updateMediaUI();
+        }
+
+        /**
+         * 4. UI Rendering (The View updates)
+         */
+        function updateLocationUI() {
+            const locData = tourData[currentLocationIndex];
+
+            // Update Text Panel
+            document.getElementById('location-title').innerText = locData.title;
+            document.getElementById('location-text').innerHTML = locData.text;
+            
+            // Update Location Navigation state
+            document.getElementById('prev-loc').disabled = (currentLocationIndex === 0);
+            document.getElementById('next-loc').disabled = (currentLocationIndex === tourData.length - 1);
+            document.getElementById('loc-counter').innerText = `${currentLocationIndex + 1} of ${tourData.length}`;
+
+            // Update Map
+            map.flyTo([locData.lat, locData.lng], locData.zoom, { animate: true, duration: 1.5 });
+
+            // Highlight current marker (optional enhancement)
+            markers.forEach((m, idx) => {
+                if (idx === currentLocationIndex) {
+                    m.setOpacity(1.0);
+                } else {
+                    m.setOpacity(0.5);
+                }
+            });
+
+            // Update Media for this new location
+            updateMediaUI();
+        }
+
+        function updateMediaUI() {
+            const mediaData = tourData[currentLocationIndex].media;
+            const currentMedia = mediaData[currentMediaIndex];
+            const contentDiv = document.getElementById('media-content');
+
+            // Clear previous media (Crucial for stopping YouTube playback)
+            contentDiv.innerHTML = '';
+
+            if (currentMedia.type === 'image') {
+                const img = document.createElement('img');
+                img.src = currentMedia.src;
+                img.alt = "Location Media";
+                contentDiv.appendChild(img);
+            } 
+            else if (currentMedia.type === 'youtube') {
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${currentMedia.id}?rel=0`;
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allowFullscreen = true;
+                contentDiv.appendChild(iframe);
+            }
+
+            // Update Media Navigation state
+            const prevBtn = document.getElementById('prev-media');
+            const nextBtn = document.getElementById('next-media');
+            const counterDiv = document.getElementById('media-counter');
+
+            if (mediaData.length > 1) {
+                prevBtn.disabled = (currentMediaIndex === 0);
+                nextBtn.disabled = (currentMediaIndex === mediaData.length - 1);
+                counterDiv.style.display = 'block';
+                counterDiv.innerText = `${currentMediaIndex + 1} / ${mediaData.length}`;
+            } else {
+                // Hide overlay controls if there is only 1 media item
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                counterDiv.style.display = 'none';
+            }
+        }
+
+        // Boot the application
+        window.onload = initApp;
+
+    </script>
+</body>
+</html>
